@@ -1,0 +1,27 @@
+.animeMainContainer {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  height: 90vh;
+  background-color: rgb(206, 100, 14);
+}
+
+.containerTitle {
+  color: white;
+  font-size: 50px;
+  align-self: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.animeListContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.loadingText {
+  text-align: center;
+  font-size: 50px;
+}

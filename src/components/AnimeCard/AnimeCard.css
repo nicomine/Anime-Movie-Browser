@@ -1,0 +1,38 @@
+.animeCard {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 10px;
+  height: 30rem;
+  border: 4px solid white;
+  flex: 1 2 calc(20% - 10px);
+  text-align: center;
+  box-sizing: border-box;
+  margin: 15px 5px;
+  transition: transform 0.3s ease, flex 0.3s ease;
+  background-color: #19191d;
+}
+
+.animeImage {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.animeCard:hover {
+  transform: scale(1.1);
+  flex: 1 2 calc(25% - 10px);
+}
+
+.animeCard:not(:hover) {
+  transform: scale(0.9);
+  flex: 1 2 calc(15% - 10px);
+}
+
+.animeTitle {
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
