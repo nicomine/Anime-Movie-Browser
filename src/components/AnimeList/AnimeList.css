@@ -1,0 +1,14 @@
+
+.animeListContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  
+  .loadingText {
+    text-align: center;
+    font-size: 50px;
+  }
+  

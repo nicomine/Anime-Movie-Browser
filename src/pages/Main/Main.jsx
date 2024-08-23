@@ -47,27 +47,12 @@ export function Main() {
         buttonType={"submit"}
       />
 
-      {isLoading ? (
-        <>
-          <p className="loadingText">Buscando títulos...</p>
-        </>
-      ) : (
-        <>
-          {!error && animeList ? (
-            <>
-              <AnimeList
-                animeList={animeList}
-                listStyle={"animeListContainer"}
-              />
-            </>
-          ) : (
-            <>
-              <p>Sin coincidencias</p>
-            </>
-          )}
-        </>
-      )}
-      
+      <AnimeList
+        animeList={animeList}
+        listStyle={"animeListContainer"}
+        isLoading={isLoading}
+        error={error}
+      />
     </div>
   );
 }
