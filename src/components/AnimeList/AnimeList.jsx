@@ -1,5 +1,5 @@
 import { AnimeCard } from "../AnimeCard/AnimeCard";
-import "./AnimeList.css"
+import "./AnimeList.css";
 
 export function AnimeList({ animeList, listStyle, isLoading, error }) {
   return (

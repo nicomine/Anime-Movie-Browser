@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { AnimeCard } from "../../components/AnimeCard/AnimeCard";
 import { URL } from "../../services/Url";
 import "./MainStyles.css";
 import { NavBar } from "../../components/navBar/NavBar";
@@ -39,6 +38,7 @@ export function Main() {
   return (
     <div className="animeMainContainer">
       <h2 className="containerTitle">Anime Repertory</h2>
+
       <NavBar
         inputType={"text"}
         inputPlaceHolder={"Anime name"}
