@@ -1,4 +1,5 @@
 import { createContext, useState, useContext } from "react";
+import { URL } from "../services/Url";
 
 export const animeContext = createContext();
 
@@ -41,7 +42,7 @@ export const AnimeProvider = ({ children }) => {
   );
 };
 
-export const useUserContext = () => {
+export const useAnimeContext = () => {
   const context = useContext(animeContext);
   if (context === undefined) {
     throw new Error(

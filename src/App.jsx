@@ -1,15 +1,17 @@
 import { Main } from "./pages/Main/Main";
 import { Login } from "./pages/Login/Login";
+import { AnimeProvider } from "./contexts/AnimeContext";
 
 import "./App.css";
-import { useState } from "react";
 
 function App() {
   return (
-    <div className="appContainer">
-      {/* <Login /> */}
-      <Main />
-    </div>
+    <AnimeProvider>
+      <div className="appContainer">
+        {/* <Login /> */}
+        <Main />
+      </div>
+    </AnimeProvider>
   );
 }
 
